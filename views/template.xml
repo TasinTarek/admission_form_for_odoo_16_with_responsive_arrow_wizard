@@ -1,0 +1,1716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="custom_homepage" name="Custom Homepage" inherit_id="website.homepage">
+        <xpath expr="//div[@class('o_portal_my_home')]" position="replace">
+            <link href="se_admission/static/src//css//custom.css" rel="stylesheet" type="text/css" />
+            <script src="se_admission/static/src//js//custom.js" type="text/javascript"></script>
+            <t t-call='portal.portal_layout'>
+                <t t-set="portal" t-value="portal" />
+                <body>
+                    <div id="topp"></div>
+                    <div class="main_container py-2">
+                        <div class="col">
+                            <div
+                                id="step1"
+                                style="
+            clip-path: polygon(
+              75% 0%,
+              100% 50%,
+              75% 100%,
+              0% 100%,
+              0% 50%,
+              0% 0%
+            );
+          "
+                                class="minus_margin color1 height"
+                            >
+                                <h6 class="mx-auto p-3 text-center">
+                                    <div>Step
+                                        1</div>
+                                    <div>Text</div>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                id="step2"
+                                style="
+            clip-path: polygon(
+              75% 0%,
+              100% 50%,
+              75% 100%,
+              0% 100%,
+              25% 50%,
+              0% 0%
+            );
+          "
+                                class="minus_margin color2 height"
+                            >
+                                <h6 class="mx-auto p-3 text-center">
+                                    <div>Step
+                                        2</div>
+                                    <div>Text</div>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                id="step3"
+                                style="
+            clip-path: polygon(
+              75% 0%,
+              100% 50%,
+              75% 100%,
+              0% 100%,
+              25% 50%,
+              0% 0%
+            );
+          "
+                                class="minus_margin color3 height"
+                            >
+                                <h6 class="mx-auto p-3 text-center">
+                                    <div>Step
+                                        3</div>
+                                    <div>Text</div>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                id="step4"
+                                style="
+            clip-path: polygon(
+              75% 0%,
+              100% 50%,
+              75% 100%,
+              0% 100%,
+              25% 50%,
+              0% 0%
+            );
+          "
+                                class="minus_margin color4 height"
+                            >
+                                <h6 class="text-center sm:mx-sm-2 mx-auto p-3">
+                                    <div>Step
+                                        4</div>
+                                    <div>Text</div>
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div
+                                id="step5"
+                                style="
+            clip-path: polygon(
+              100% 0%,
+              100% 100%,
+              75% 100%,
+              0% 100%,
+              25% 50%,
+              0% 0%
+            );
+          "
+                                class="minus_margin color5 height"
+                            >
+                                <h6 class="text-center sm:mx-sm-2 mx-auto p-3">
+                                    <div>Step
+                                        5</div>
+                                    <div>Text</div>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <form type='submit'>
+                    <section id="section1" style="display: block">
+                        
+                            <div class="container">
+                                <h3 class="text-center my-2">Admission
+                                    Details</h3>
+                                <div class="form-check col ">
+                                    <div class="p-4">
+                                        <input
+                                            class="form-check-input"
+                                            type="radio"
+                                            name="flexRadioDefault"
+                                            id="flexRadioDefault1"
+                                        />
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Is Alumni ?
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <!-- <div class="col-3 xs:col-1">
+                                <label for='first_name'>First Name</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Type your First Name" />
+                            </div>
+                            <div class="col-3 xs:col-1">
+                                <label for='middle_name'>Middle Name</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Type your Middle Name" />
+                            </div>
+                            <div class="col">
+                            <label for='last_name'>Last Name</label>
+                                <input type="text" class="form-control"
+                                    placeholder="Type your Last Name" />
+                            </div> -->
+                                    <div class="input-group">
+                                        <span class="input-group-text">First
+                                            &amp; Last name</span>
+                                        <input type="text" aria-label="First name"
+                                            class="form-control" />
+                                        <input type="text" aria-label="Last name"
+                                            class="form-control" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="row ">
+                                        <div class="col my-1">
+
+                                            <label>Student
+                                                ID</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                placeholder="Type your Student ID"
+                                            />
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row my-1">
+                                        <div class="col-md-6 col-sm-12">
+                                            <div>
+                                                <label for="last_name">Application
+                                                    Serial No.</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="" />
+                                            </div>
+                                            <div>
+                                                <label>Register
+                                                    ID</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="" />
+                                            </div>
+                                            <div>
+                                                <label>Application
+                                                    Number</label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <div class="form-group">
+                                                <label for="inputDateOfBirth">Application
+                                                    Date</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="inputDateOfBirth"
+                                                    placeholder="Enter Date of Birth"
+                                                />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDateOfBirth">Admission
+                                                    Date</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="inputDateOfBirth"
+                                                    placeholder="Enter Date of Birth"
+                                                />
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDateOfBirth">Admission
+                                                    End Date</label>
+                                                <input
+                                                    type="date"
+                                                    class="form-control"
+                                                    id="inputDateOfBirth"
+                                                    placeholder="Enter Date of Birth"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row my-5">
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group ">
+                                            <label for="inputProgram">Select
+                                                Program</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose
+                                                    Degree</option>
+                                                <option>Bachelor's Degree</option>
+                                                <option>Master's
+                                                    Degree</option>
+                                                <option>PhD</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputCurriculumn">
+                                                Curriculumn</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Curriculumn</option>
+                                                <option>
+                                                    British</option>
+                                                <option>
+                                                    National</option>
+                                                <option>PhD</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="inputBatch">
+                                                Batch</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Batch</option>
+                                                <option>Batch One</option>
+                                                <option>Batch
+                                                    Two</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div class="form-group">
+                                            <label>Admission
+                                                Form Fee</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label>Admission
+                                                Fee </label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputFeesType">Fees
+                                                Type</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Fees Type</option>
+                                                <option>Type One</option>
+                                                <option>Type
+                                                    Two</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Registration
+                                                Fees Ref.</label>
+                                            <input type="text" class="form-control" placeholder="" />
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    
+                                    <div class="row ">
+                                        <!-- <h5>Faculty &amp; Department</h5> -->
+                                        <div class="col-md-6 col-sm-12">
+                                            <div><h5>Faculty
+                                                    &amp; Department</h5>
+                                            </div>
+                                            <div class="form-group ">
+                                                <label for="inputFaculty">
+                                                    Faculty</label>
+                                                <select class="form-control" id="inputDegree">
+                                                    <option>Choose
+                                                        Faculty</option>
+                                                    <option>Type One</option>
+                                                    <option>Type Two</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputDepartment">
+                                                    Department</label>
+                                                <select class="form-control" id="inputDegree">
+                                                    <option>Choose Department</option>
+                                                    <option>Type
+                                                        One</option>
+                                                    <option>Type Two</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <!-- <h5>
+                                            Semester</h5> -->
+                                        <div class="col-md-6 col-sm-12">
+                                            <div>
+                                                <h5>
+                                                    Semester</h5>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputSemester">
+                                                    Semester</label>
+                                                <select class="form-control" id="inputDegree">
+                                                    <option>Choose
+                                                        Semester</option>
+                                                    <option>Type One</option>
+                                                    <option>Type Two</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputSemesterType">Semester
+                                                    Type</label>
+                                                <select class="form-control" id="inputDegree">
+                                                    <option>Choose Semester Type</option>
+                                                    <option>Type
+                                                        One</option>
+                                                    <option>Type Two</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="inputSemesterYear">Semester
+                                                    Year</label>
+                                                <select class="form-control" id="inputDegree">
+                                                    <option>Choose Semester Year</option>
+                                                    <option>Type
+                                                        One</option>
+                                                    <option>Type Two</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div>
+                                </div>
+                                <div>
+                                    <h5 class="my-4">Academic</h5>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputApplyType">Apply Type</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose
+                                                    Apply Type</option>
+                                                <option>Type One</option>
+                                                <option>Type Two</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputStudentType">Student
+                                                Type</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Student Type</option>
+                                                <option>Local</option>
+                                                <option>
+                                                    International</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputEducationShift">Education
+                                                Shift</label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Education Shift</option>
+                                                <option>Type One</option>
+                                                <option>Type
+                                                    Two</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputCampus">
+                                                Campus </label>
+                                            <select class="form-control" id="inputDegree">
+                                                <option>Choose Campus</option>
+                                                <option>Daffodil Smart
+                                                    City</option>
+                                                <option>Dhanmondi Main Campus</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="text-decoration-none" href="#topp">
+                                    <button
+                                        type="button"
+                                        class="btn btn-outline-success my-5"
+                                        onclick="nextSection()"
+                                    >
+                                        Next
+                                    </button>
+                                </a>
+                            </div>
+
+                        </section>
+                        <!-- Educational Details Section 2 -->
+                    <section id="section2">
+                        <div class="container">
+                            <h3 class="my-2 text-center">Education
+                                    Details</h3>
+                            
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h5 class='my-4'>Secondary School Certificate (SSC)</h5>
+                                        <div class="form-row m-2">
+                                            <div class="form-group col">
+                                                <label for="inputRegistration">Registration
+                                                    Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Registration Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputRoll">Roll
+                                                    Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Roll Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputInstitution">Institution
+                                                    Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Institution Name"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputYearOfCompletion">Year
+                                                    of
+                                                    Completion</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="inputYearOfCompletion"
+                                                    placeholder="Enter Year of Completion"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputFieldOfStudy">Field
+                                                of Study</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="inputFieldOfStudy"
+                                                placeholder="Enter Field of Study"
+                                            />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAchievements">
+                                                Achievements</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="inputAchievements"
+                                                rows="3"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="my-4">Higher-Secondary
+                                            School Certificate (HSC)</h5>
+                                        <div class="form-row m-2">
+                                            <div class="form-group col">
+                                                <label for="inputRegistration">Registration Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Registration Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputRoll">Roll
+                                                    Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Roll Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputInstitution">Institution
+                                                    Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Institution Name"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputYearOfCompletion">Year
+                                                    of
+                                                    Completion</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="inputYearOfCompletion"
+                                                    placeholder="Enter Year of Completion"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputFieldOfStudy">Field
+                                                of Study</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="inputFieldOfStudy"
+                                                placeholder="Enter Field of Study"
+                                            />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAchievements">
+                                                Achievements</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="inputAchievements"
+                                                rows="3"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-md-6">
+                                        <h5 class="my-4">
+                                            O-Level</h5>
+                                        <div class="form-row m-2">
+                                            <div class="form-group col">
+                                                <label for="inputRegistration">Registration Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Registration Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputRoll">Roll
+                                                    Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Roll Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputInstitution">Institution
+                                                    Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Institution Name"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputYearOfCompletion">Year
+                                                    of
+                                                    Completion</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="inputYearOfCompletion"
+                                                    placeholder="Enter Year of Completion"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputFieldOfStudy">Field
+                                                of Study</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="inputFieldOfStudy"
+                                                placeholder="Enter Field of Study"
+                                            />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAchievements">
+                                                Achievements</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="inputAchievements"
+                                                rows="3"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="my-4">
+                                            A-Level</h5>
+                                        <div class="form-row m-2">
+                                            <div class="form-group col">
+                                                <label for="inputRegistration">Registration Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Registration Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputRoll">Roll
+                                                    Number</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Roll Number"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputInstitution">Institution
+                                                    Name</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="inputInstitution"
+                                                    placeholder="Enter Institution Name"
+                                                />
+                                            </div>
+                                            <div class="form-group col">
+                                                <label for="inputYearOfCompletion">Year
+                                                    of
+                                                    Completion</label>
+                                                <input
+                                                    type="number"
+                                                    class="form-control"
+                                                    id="inputYearOfCompletion"
+                                                    placeholder="Enter Year of Completion"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col">
+                                            <label for="inputFieldOfStudy">Field
+                                                of Study</label>
+                                            <input
+                                                type="text"
+                                                class="form-control"
+                                                id="inputFieldOfStudy"
+                                                placeholder="Enter Field of Study"
+                                            />
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="inputAchievements">
+                                                Achievements</label>
+                                            <textarea
+                                                class="form-control"
+                                                id="inputAchievements"
+                                                rows="3"
+                                            ></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="text-decoration-none" href="#topp">
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger my-5"
+                                onclick="prevSection()"
+                            >
+                                        Previous
+                                    </button>
+                                </a>
+                                <a class="text-decoration-none" href="#topp">
+                            <button
+                                type="button"
+                                class="btn btn-outline-success my-5"
+                                onclick="nextSection()"
+                            >
+                                        Next
+                                    </button>
+                                </a>
+                            </div>
+                        </section>
+                        <!-- Personal Details Section 3 -->
+                    <section id="section3">
+
+                        <div class="container">
+                            <h3 class="text-center my-2">Personal
+                                    Details</h3>
+                            <div class="row">
+
+                                
+                                    <div class="row">
+                                        <!-- Gender -->
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputGender"> Gender </label>
+                                            <select class="form-control" id="inputGender">
+                                                <option>Choose Gender</option>
+                                                <option>Male</option>
+                                                <option>
+                                                    Female</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+                                        <!-- Maritial Status -->
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputMaritialStatus">
+                                                Maritial Status </label>
+                                            <select class="form-control" id="MaritialStatus">
+                                                <option>Choose Maritial Status</option>
+                                                <option>
+                                                    Single</option>
+                                                <option>Married</option>
+                                                <option>Widowed</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <!-- Email -->
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="email">
+                                                Email</label>
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="email"
+                                                name="email"
+                                            />
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="alternateEmail">
+                                                Alternate Email</label>
+                                            <input
+                                                type="email"
+                                                class="form-control"
+                                                id="alternateEmail"
+                                                name="alternateEmail"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="row my-1">
+                                        <!-- Phone Number -->
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="phone">Phone
+                                                Number</label>
+                                            <input
+                                                type="tel"
+                                                class="form-control"
+                                                id="phone"
+                                                name="phone"
+                                            />
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="emergencyPhone">Emergency
+                                                Phone Number</label>
+                                            <input
+                                                type="tel"
+                                                class="form-control"
+                                                id="emergencyPhone"
+                                                name="emergencyPhone"
+                                            />
+                                        </div>
+                                    </div>
+
+                                    <!-- Address -->
+                                    <div class="row my-1">
+                                        <div class="col-md-6 col-sm-12">
+                                            <h3>Permanent
+                                                Address</h3>
+                                            <div>
+                                                <label for="permanent-address" class="form-label"
+                                                >Permanent
+                                                    Address</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="permanent-address"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label for="permanent-zip" class="form-label"
+                                                >Permanent
+                                                    Zip Code</label>
+                                                <input type="text" class="form-control"
+                                                    id="permanent-zip" />
+                                            </div>
+                                            <div>
+                                                <label for="permanent-district" class="form-label"
+                                                >Permanent
+                                                    District</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="permanent-district"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label for="permanent-country" class="form-label"
+                                                >Permanent
+                                                    Country</label>
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    id="permanent-country"
+                                                />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-sm-12">
+                                            <h3>Present
+                                                Address</h3>
+                                            <div>
+                                                <label for="present-address" class="form-label"
+                                                >Present
+                                                    Address</label>
+                                                <input type="text" class="form-control"
+                                                    id="present-address" />
+                                            </div>
+                                            <div>
+                                                <label for="present-zip" class="form-label"
+                                                >Present
+                                                    Zip Code</label>
+                                                <input type="text" class="form-control"
+                                                    id="present-zip" />
+                                            </div>
+                                            <div>
+                                                <label for="present-district" class="form-label"
+                                                >Present
+                                                    District</label>
+                                                <input type="text" class="form-control"
+                                                    id="present-district" />
+                                            </div>
+                                            <div>
+                                                <label for="present-country" class="form-label"
+                                                >Present
+                                                    Country</label>
+                                                <input type="text" class="form-control"
+                                                    id="present-country" />
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-check text-center p-5">
+                                        <input
+                                            class="form-check-input"
+                                            type="checkbox"
+                                            id="same-as-permanent"
+                                        />
+                                        <label class="form-check-label" for="same-as-permanent"
+                                        >Present
+                                            Address Same as Permanent Address</label>
+                                    </div>
+                                    <!-- Personal Information  -->
+                                    <div class="row my-1">
+
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputMaritialStatus">
+                                                Religion</label>
+                                            <select class="form-control" id="religion">
+                                                <option>Choose Religion</option>
+                                                <option>Islam</option>
+                                                <option>
+                                                    Christian</option>
+                                                <option>Hindu</option>
+                                                <option>Others</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="inputMaritialStatus">Blood
+                                                Group</label>
+                                            <select class="form-control" id="bloodgroup">
+                                                <option>Choose Blood Group</option>
+                                                <option>A+ve</option>
+                                                <option>
+                                                    B+ve</option>
+                                                <option>O+ve</option>
+                                                <option>AB+ve</option>
+                                                <option>A-ve</option>
+                                                <option>
+                                                    B-ve</option>
+                                                <option>O-ve</option>
+                                                <option>AB-ve</option>
+                                            </select>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="row my-1">
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="present-country" class="form-label"
+                                            >Whatsapp
+                                                No.</label>
+                                            <input type="text" class="form-control" id="whatsapp" />
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="present-country" class="form-label"
+                                            >Social
+                                                Network ID.</label>
+                                            <input type="text" class="form-control"
+                                                id="social-network" />
+                                        </div>
+
+                                    </div>
+                                    <!-- Nationality -->
+                                    <div class="row my-1">
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="nationality">
+                                                Nationality</label>
+                                            <select class="form-control" id="nationality">
+                                                <option>Choose Nationality</option>
+                                                <option>
+                                                    Bangladeshi</option>
+                                                <option>Pakistani</option>
+                                                <option>American</option>
+                                                <option>
+                                                    British</option>
+                                                <option>Vikings</option>
+                                                <option>Ottoman</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12 ">
+                                            <label for="nationalID" class="form-label"
+                                            >National
+                                                ID
+                                                No.</label>
+                                            <input type="text" class="form-control" id="nationalID" />
+                                        </div>
+                                    </div>
+                                    <!-- Passport -->
+                                    <div class="row my-1">
+                                        <div class="form-group col-md-6 col-sm-12 ">
+                                            <label for="nationalID" class="form-label"
+                                            >Passport
+                                                ID
+                                                No.</label>
+                                            <input type="text" class="form-control" id="nationalID" />
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="nationality">Passport
+                                                Expire Date</label>
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="inputPassportNo"
+                                                placeholder="Enter Expire Date of Passport"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- Visa -->
+                                    <div class="row my-1">
+                                        <div class="form-group col-md-6 col-sm-12 ">
+                                            <label for="visa" class="form-label"
+                                            >Visa
+                                                No.</label>
+                                            <input type="text" class="form-control" id="visa" />
+                                        </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="visa-expire">Visa
+                                                Expire Date</label>
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="inputVisaExpire"
+                                                placeholder="Enter Expire Date of Visa"
+                                            />
+                                        </div>
+                                    </div>
+                                    <!-- PLease Tick -->
+                                    <div class="row my-2 ">
+                                        <h6>Please
+                                            Tick How You Know Daffodil International
+                                            University(DIU)</h6>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="diu_website"
+                                            />
+                                            <label class="form-check-label" for="diu_website"
+                                            >From,DIU
+                                                Website</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="social_media"
+                                            />
+                                            <label class="form-check-label" for="social_media"
+                                            >Social
+                                                Media</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="daffodil_family"
+                                            />
+                                            <label class="form-check-label" for="daffodil_family"
+                                            >Daffodil
+                                                Family</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="diu_employee"
+                                            />
+                                            <label class="form-check-label" for="diu_employee"
+                                            >DIU
+                                                Employee</label>
+                                        </div>
+                                    </div>
+                                    <div class="row my-2">
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="newspaper"
+                                            />
+                                            <label class="form-check-label" for="newspaper"
+                                            >
+                                                Newspaper</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="sms"
+                                            />
+                                            <label class="form-check-label" for="sms"
+                                            >
+                                                SMS</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="diu_student"
+                                            />
+                                            <label class="form-check-label" for="diu_student"
+                                            >DIU
+                                                Student</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="others"
+                                            />
+                                            <label class="form-check-label" for="others"
+                                            >
+                                                Others</label>
+                                        </div>
+                                    </div>
+                                    <!-- Tick the following if applicable -->
+                                    <div class="row">
+                                        <h6>Tick
+                                            the following if applicable</h6>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="freedom_fighter"
+                                            />
+                                            <label class="form-check-label" for="freedom_fighter"
+                                            >Parent
+                                                is Freedom Fighter</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="tribal"
+                                            />
+                                            <label class="form-check-label" for="tribal"
+                                            >Are
+                                                you a
+                                                Tribal</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="physically_disorder"
+                                            />
+                                            <label class="form-check-label"
+                                                for="physically_disorder"
+                                            >Are
+                                                you a Physically
+                                                Disorder</label>
+                                        </div>
+                                        <div class="form-check col">
+                                            <input
+                                                class="form-check-input"
+                                                type="checkbox"
+                                                id="player"
+                                            />
+                                            <label class="form-check-label" for="player"
+                                            >Are
+                                                you a
+                                                First Division Player</label>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            <a class="text-decoration-none" href="#topp">
+                                <button
+                                        type="button"
+                                        class="btn btn-outline-danger my-5"
+                                        onclick="prevSection()"
+                                    >
+                                        Previous
+                                    </button>
+                                </a>
+                            <a class="text-decoration-none" href="#topp">
+                                <button
+                                        type="button"
+                                        class="btn btn-outline-success my-5"
+                                        onclick="nextSection()"
+                                    >
+                                        Next
+                                    </button>
+                                </a>
+
+                            </div>
+
+                        </section>
+                        <!-- Family Details Section 4 -->
+                    <section id="section4">
+
+                        <div class="container">
+                        <h2>Parent's
+                                    Details</h2>
+                        <div class="row">
+                                    <!-- Fathers INformation -->
+
+                            <div class="col">
+                                <span>Father's Information</span>
+                                <div class="input-group">
+                                    <span class="input-group-text">First &amp; Last name</span>
+                                    <input type="text" aria-label="First name" class="form-control" />
+                                    <input type="text" aria-label="Last name" class="form-control" />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputContactFather">
+                                                Contact</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputContactFather"
+                                        placeholder="Enter Father's Number"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputEmailFather">
+                                                Email</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="inputEmailFather"
+                                        placeholder="Enter Father's Email"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputNationalIdFather">National
+                                                ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputNationalIdFather"
+                                        placeholder="Enter Father's Email"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputPassportIdFather">Passport
+                                                ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputPassportIdFather"
+                                        placeholder="Enter Father's Passport ID"
+                                    />
+                                        </div>
+                                <div class="form-group col">
+                                    <label for="fatherDateOfBirth">Date
+                                                Of Birth</label>
+                                    <input
+                                        type="date"
+                                        class="form-control"
+                                        id="fatherDateOfBirth"
+                                        placeholder="Enter Date of Birth"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputAgeFather">
+                                                Age</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputAgeFather"
+                                        placeholder="Enter Your Father's Age"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputOccupationFather">
+                                                Occupation</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputOccupationFather"
+                                        placeholder="Enter Your Father's Occupation"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputDesignationFather">
+                                                Designation</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputDesignationFather"
+                                        placeholder="Enter Your Father's Designation"
+                                    />
+                                        </div>
+                                <div class="form-group ">
+                                    <label>Annual
+                                                Income</label>
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places)"
+                                        />
+                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Mothers INformation -->
+                            <div class="col">
+                                <span>Mother's
+                                            Information</span>
+                                <div class="input-group">
+                                    <span class="input-group-text">First &amp; Last name</span>
+                                    <input type="text" aria-label="First name" class="form-control" />
+                                    <input type="text" aria-label="Last name" class="form-control" />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputContactMother">
+                                                Contact</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputContactMother"
+                                        placeholder="Enter Mother's Number"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputEmailMother">
+                                                Email</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="inputEmailMother"
+                                        placeholder="Enter Mother's Email"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputNationalIdMother">National
+                                                ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputNationalIdMother"
+                                        placeholder="Enter Mother's Email"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputPassportIdMother">Passport
+                                                ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputPassportIdMother"
+                                        placeholder="Enter Mother's Passport ID"
+                                    />
+                                        </div>
+                                <div class="form-group col">
+                                    <label for="motherDateOfBirth">Date
+                                                Of Birth</label>
+                                    <input
+                                        type="date"
+                                        class="form-control"
+                                        id="motherDateOfBirth"
+                                        placeholder="Enter Date of Birth"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputAgeMother">
+                                                Age</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputAgeMother"
+                                        placeholder="Enter Your Mother's Age"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputOccupationMother">
+                                                Occupation</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputOccupationMother"
+                                        placeholder="Enter Your Mother's Occupation"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputDesignationMother">
+                                                Designation</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputDesignationMother"
+                                        placeholder="Enter Your Mother's Designation"
+                                    />
+                                        </div>
+                                <div class="form-group ">
+                                    <label>Annual
+                                                Income</label>
+                                    <div class="input-group">
+                                        <input
+                                            type="text"
+                                            class="form-control"
+                                            aria-label="Dollar amount (with dot and two decimal places)"
+                                        />
+                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">0.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- LOcal Guardian -->
+                        <div class="row my-5">
+                            <h6 class="m-3">Local
+                                        Guardian</h6>
+                            <div class="col">
+
+                                <div>
+                                    <div class="input-group">
+                                        <span class="input-group-text">First &amp; Last name</span>
+                                        <input type="text" aria-label="First name"
+                                            class="form-control" />
+                                        <input type="text" aria-label="Last name"
+                                            class="form-control" />
+                                            </div>
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputEmailLocal">
+                                                Email</label>
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        id="inputEmailLocal"
+                                        placeholder="Enter Local Guardian's Email"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputContactLocal">
+                                                Contact</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputContactLocal"
+                                        placeholder="Enter Local Guardian's Number"
+                                    />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputNationalIdLocal">National
+                                                ID</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputNationalIdLocal"
+                                        placeholder="Enter Local Guardian's National Id"
+                                    />
+                                        </div>
+                                <div class="form-group col ">
+                                    <label for="passportLocalID" class="form-label"
+                                    >Passport
+                                                ID No.</label>
+                                    <input type="text" class="form-control" id="passportLocalID" />
+                                        </div>
+                                <div class="form-group">
+                                    <label for="inputRlationship">
+                                                Relationship</label>
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        id="inputRlationship"
+                                        placeholder="Enter Your Relationship with Local Guardian"
+                                    />
+                                        </div>
+                                    </div>
+
+                            <div class="col">
+
+                                <div>
+                                    <label for="present-address" class="form-label"
+                                    >Present
+                                                Address</label>
+                                    <input type="text" class="form-control" id="present-address" />
+                                        </div>
+                                <div class="mb-3">
+                                    <label for="present-zip" class="form-label"
+                                    >Present
+                                                Zip Code</label>
+                                    <input type="text" class="form-control" id="present-zip" />
+                                        </div>
+                                <div class="mb-3">
+                                    <label for="present-district" class="form-label"
+                                    >Present
+                                                District</label>
+                                    <input type="text" class="form-control" id="present-district" />
+                                        </div>
+                                <div class="mb-3">
+                                    <label for="present-country" class="form-label"
+                                    >Present
+                                                Country</label>
+                                    <input type="text" class="form-control" id="present-country" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            <a class="text-decoration-none" href="#topp">
+                            <button
+                            type="button"
+                            class="btn btn-outline-danger my-5"
+                            onclick="prevSection()"
+                            >
+                                        Previous
+                                    </button>
+                                </a>
+                            <a class="text-decoration-none" href="#topp">
+                        <button
+                            type="button"
+                            class="btn btn-outline-success my-5"
+                            onclick="nextSection()"
+                        >
+                                        Next
+                                    </button>
+                                </a>
+                            </div>
+                        </section>
+                        <!-- Payment Details -->
+                    <section id="section5">
+                        <div class="container">
+                            <h2>Invoice
+                                    &amp; Payment Details</h2>
+                            <h6>Admission Form Fee</h6>
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+
+                                        <div class="form-group">
+                                            <label>Invoice</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">
+                                                        ৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Total
+                                                    Amount</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Amount
+                                                    Paid</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Amount
+                                                    Due</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div>
+                                            <label for="payment_status" class="form-label"
+                                            >Payment
+                                                    Status</label>
+                                            <input type="text" class="form-control"
+                                                id="payment_status" />
+                                            </div>
+                                        <div>
+                                            <label for="payment_mediums" class="form-label"
+                                            >Payment
+                                                    Mediums</label>
+                                            <input type="text" class="form-control"
+                                                id="payment_mediums" />
+                                            </div>
+                                        <div class="form-group">
+                                            <label for="paymentDate">Date
+                                                    Of Payment</label>
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="paymentDate"
+                                            />
+                                            </div>
+                                        </div>
+                                    </div>
+                                <h4 class="my-3">Admission
+                                        Form Fees</h4>
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-12">
+
+                                        <div class="form-group">
+                                            <label>Invoice</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Total
+                                                    Amount</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Amount
+                                                    Paid</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        <div class="form-group">
+                                            <label>Amount
+                                                    Due</label>
+                                            <div class="input-group">
+                                                <input
+                                                    type="text"
+                                                    class="form-control"
+                                                    aria-label="Dollar amount (with dot and two decimal places)"
+                                                />
+                                                <span class="input-group-text">৳</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="col-md-6 col-sm-12">
+                                        <div>
+                                            <label for="payment_status" class="form-label"
+                                            >Payment
+                                                    Status</label>
+                                            <input type="text" class="form-control"
+                                                id="payment_status" />
+                                            </div>
+                                        <div>
+                                            <label for="payment_mediums" class="form-label"
+                                            >Payment
+                                                    Mediums</label>
+                                            <input type="text" class="form-control"
+                                                id="payment_mediums" />
+                                            </div>
+                                        <div class="form-group col-md-6 col-sm-12">
+                                            <label for="paymentDate">Date
+                                                    Of Payment</label>
+                                            <input
+                                                type="date"
+                                                class="form-control"
+                                                id="paymentDate"
+                                            />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <a class="text-decoration-none" href="#topp">
+                            <button
+                                type="button"
+                                class="btn btn-outline-danger my-5"
+                                onclick="prevSection()"
+                            >
+                                        Previous
+                                    </button>
+                                </a>
+                            <a class="text-decoration-none" href="#topp">
+                            <button
+                            class='btn btn-success'
+                            type='submit'
+                            onclick='submit'
+                            >
+                                        Submit
+                                    </button>
+                                </a>
+                            </div>
+                        </section>
+                    </form>
+                </body>
+            </t>
+
+        </xpath>
+
+    </template>
+</odoo>

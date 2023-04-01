@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <template id="custom_portal_template" inherit_id="portal.portal_my_home">
+            <xpath expr="//div[@class='o_welcome_content']" position="replace">
+                <!-- Your custom template HTML code here -->
+                <div>Hi</div>
+            </xpath>
+        </template>
+    </data>
+</odoo>

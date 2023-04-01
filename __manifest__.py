@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Se Application",
+    'name': "SmartEdu Application",
 
     'summary': """
         Short (1 phrase/line) summary of the module's purpose, used as
@@ -21,20 +21,26 @@
                 'se_education_board',
                 'se_education_shift',
                 'se_semester',
-                'se_education_core'],
+                'se_education_core',
+                'website',
+                'portal',
+                ],
 
     # always loaded
     'data': [
         # security
         'security/ir.model.access.csv',
         # views
-        'views/se_batch_view.xml',
+        # 'views/se_batch_view.xml',
         'views/se_applicant_views.xml',
         'views/se_applicant_register.xml',
         'views/menus.xml',
+        'views/template2.xml',
     ],
+    
     # only loaded in demonstration mode
     'demo': [
         'demo/demo.xml',
     ],
+    'installable': True,
 }
